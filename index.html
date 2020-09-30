@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="js/usuarioApi.js" type="text/javascript"></script>
+    <script src="js/usuarioView.js" type="text/javascript"></script>
+    <title>Consumindio Api</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <h1>Dados da API</h1>
+    </nav>
+    <div>
+        <form action="#" method="POST" onsubmit="return validarUsuario('add')">
+            <label for="nome" class="label">Nome: </label>
+            <input type="text" name="nome" id="nome" class="input" placeholder="preencha o nome">
+            <br>
+            <label for="email" class="label">E-mail: </label>
+            <input type="email" name="email" id="email" class="input" placeholder="preencha o e-mail">
+            <br>
+            <label for="login" class="label">Login: </label>
+            <input type="text" name="login" id="login" class="input" placeholder="preencha o login">
+            <br>
+            <label for="senha" class="label">Senha: </label>
+            <input type="password" name="senha" id="senha" class="input" placeholder="preencha a senha">
+            <br>
+            <label for="senhaValidar" class="label">Confirme a senha: </label>
+            <input type="password" name="senhaValidar" id="senhaValidar" class="input" placeholder="Ciomfime a senha">
+            <br>
+            <button type="submit" class="ButtonLinkPage">Salvar</button>
+        </form>
+    </div>
+
+    <hr />
+    <br>
+
+    <div>
+        <h3>Lista de usuários</h3>
+
+        <!-- Para teste -->
+        <!-- <span id="codigo"></span> 
+        <span id="nome"></span> 
+        <span id="email"></span> 
+        <span id="login"></span>  -->
+
+        <table id="tabelaDeUsuarios">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Login</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaDeUsuarios">
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
